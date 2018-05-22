@@ -175,7 +175,7 @@ endfunction
 " is used.
 function! vimwiki#diary#make_note(wnum, ...)
   if a:wnum == 0
-    let wiki_nr = vimwiki#vars#get_bufferlocal('wiki_nr')
+    let wiki_nr = vimwiki#vars#get_bufferlocal('wiki_nr') - 1
   else
     let wiki_nr = a:wnum - 1
   endif
